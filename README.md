@@ -133,7 +133,6 @@ if [ $percent -ge $critical ] ; then
 </body></html>" >> mail.html
 
 #       subject="`date +"%Y%m%d %H:%M"` memory check-critical"
-#       recipient="ktuser2@no-reply.com"
 #       mail -s "$subject" $recepient < mail.html
 
         cat mail.html | sendmail -t
